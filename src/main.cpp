@@ -1,9 +1,9 @@
 #include <Arduino.h>
 
-const int red = 0;
-const int yellow = 1;
-const int green = 2;
-const int button = 5;
+const int red = PIN0;
+const int yellow = PIN1;
+const int green = PIN2;
+const int button = PIN5;
 
 #define SECONDS(x) x * 1000
 
