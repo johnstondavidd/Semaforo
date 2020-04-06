@@ -3,6 +3,7 @@
 const int red = 0;
 const int yellow = 1;
 const int green = 2;
+const int button = 5;
 
 #define SECONDS(x) x * 1000
 
@@ -11,10 +12,12 @@ void setup()
   pinMode(red, OUTPUT);
   pinMode(yellow, OUTPUT);
   pinMode(green, OUTPUT);
+  pinMode(button, INPUT_PULLUP);
 }
 
 void loop()
 {
+
   digitalWrite(green, LOW);
   digitalWrite(red, HIGH);
   delay(SECONDS(10));
