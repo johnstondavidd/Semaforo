@@ -17,7 +17,10 @@ void setup()
 
 void loop()
 {
-
+  if (digitalRead(button))
+  {
+  
+  }
   digitalWrite(green, LOW);
   digitalWrite(red, HIGH);
   delay(SECONDS(10));
