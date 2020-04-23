@@ -17,9 +17,14 @@ void setup()
 
 void loop()
 {
-  if (digitalRead(button))
+  while (!digitalRead(button))
   {
-//agregado por guillermo para testear si se puede comitear al remoto
+    digitalWrite(yellow, (!digitalRead(yellow)));
+    delay(SECONDS(0.5));
+  }
+
+  {
+    //agregado por guillermo para testear si se puede comitear al remoto
   }
   digitalWrite(green, LOW);
   digitalWrite(red, HIGH);
