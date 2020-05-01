@@ -18,9 +18,6 @@ void setup()
 void loop()
 {
   if (digitalRead(button))
-
-
-  
   {
 //agregado por guillermo para testear si se puede comitear al remoto
   }
